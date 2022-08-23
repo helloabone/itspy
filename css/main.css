@@ -1,0 +1,45 @@
+body {
+    font-family: Consolas;
+}
+
+h1 {
+    color: #4051b5 !important;
+    font-weight: bold !important;
+}
+
+h2 {
+    color: #138535 !important;
+    font-weight: bold !important;
+}
+
+h3 {
+    color: #2085a6 !important;
+    font-weight: bold !important;
+}
+
+em {
+    color: #d4362b;
+    font-style: normal;
+}
+
+.linenos,
+pre code {
+    font-size: 15px !important;
+}
+
+.linenodiv * {
+    font-size: 15px !important;
+}
+
+p,
+li {
+    font-size: 16px !important;
+}
+
+li code {
+    font-size: 15px !important;
+}
+
+table * {
+    font-size: 15px !important;
+}
