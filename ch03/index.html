@@ -292,62 +292,69 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    日期與浮點數格式
+    浮點數格式
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    計算平均分數
+    日期格式
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    平均星級評等
+    計算平均分數
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    外匯換算
+    平均星級評等
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
-    字串格式化參數設定順序
+    外匯換算
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    輸出檔案第一行
+    字串格式化參數順序
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
-    讀取銷售資料
+    輸出檔案第一行
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
-    莓果銷售數量★
+    讀取銷售資料
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
+    莓果銷售數量★
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
     檔案附加內容★
   </a>
   
@@ -449,62 +456,69 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    日期與浮點數格式
+    浮點數格式
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    計算平均分數
+    日期格式
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    平均星級評等
+    計算平均分數
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    外匯換算
+    平均星級評等
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
-    字串格式化參數設定順序
+    外匯換算
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    輸出檔案第一行
+    字串格式化參數順序
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
-    讀取銷售資料
+    輸出檔案第一行
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
-    莓果銷售數量★
+    讀取銷售資料
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
+    莓果銷售數量★
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
     檔案附加內容★
   </a>
   
@@ -527,22 +541,23 @@
 
 <h1 id="3">3.輸入和輸出</h1>
 <p><strong>執行輸入和輸出操作</strong></p>
-<h2 id="_1">日期與浮點數格式</h2>
+<h2 id="_1">浮點數格式</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">datetime</span>
-<span class="n">adate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%m-</span><span class="si">%d</span><span class="s1">-%y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%m-</span><span class="si">%d</span><span class="s1">-%Y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span>
-<span class="n">num</span> <span class="o">=</span> <span class="mf">123456.789</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="mf">123456.789</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:,.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_2">計算平均分數</h2>
+<h2 id="_2">日期格式</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="n">adate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%m-</span><span class="si">%d</span><span class="s1">-%y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%m-</span><span class="si">%d</span><span class="s1">-%Y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_3">計算平均分數</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -567,7 +582,7 @@
     <span class="c1"># %6.2f: 欄位總寬度 6 個字元，小數保留 2 位</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%-20s</span><span class="s2"> 的平均分數: </span><span class="si">%6.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">average</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_3">平均星級評等</h2>
+<h2 id="_4">平均星級評等</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -590,7 +605,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;平均星級評等: </span><span class="si">{:.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">average</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;平均星級評等: </span><span class="si">{</span><span class="n">average</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_4">外匯換算</h2>
+<h2 id="_5">外匯換算</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -629,7 +644,7 @@
 
 <span class="n">print_table</span><span class="p">(</span><span class="n">exchange_rates</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_5">字串格式化參數設定順序</h2>
+<h2 id="_6">字串格式化參數順序</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -640,7 +655,7 @@
 <span class="n">fruit</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{1}</span><span class="s2">, </span><span class="si">{0}</span><span class="s2"> and </span><span class="si">{2}</span><span class="s2">&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_6">輸出檔案第一行</h2>
+<h2 id="_7">輸出檔案第一行</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -675,7 +690,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">get_first_line_of_file</span><span class="p">(</span><span class="s1">&#39;data1.txt&#39;</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">get_first_line_of_file</span><span class="p">(</span><span class="s1">&#39;data2.txt&#39;</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_7">讀取銷售資料</h2>
+<h2 id="_8">讀取銷售資料</h2>
 <p><em>測資檔</em>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -730,7 +745,7 @@
         <span class="k">break</span>
 <span class="n">fho</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div></p>
-<h2 id="_8">莓果銷售數量★</h2>
+<h2 id="_9">莓果銷售數量★</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -765,7 +780,7 @@
     <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span>
 <span class="p">]</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_9">檔案附加內容★</h2>
+<h2 id="_10">檔案附加內容★</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
