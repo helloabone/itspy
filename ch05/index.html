@@ -328,8 +328,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#try-exceptx2" class="md-nav__link">
-    try-except語法錯誤x2
+  <a href="#try-exceptx3" class="md-nav__link">
+    try-except語法錯誤x3
   </a>
   
 </li>
@@ -448,8 +448,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#try-exceptx2" class="md-nav__link">
-    try-except語法錯誤x2
+  <a href="#try-exceptx3" class="md-nav__link">
+    try-except語法錯誤x3
   </a>
   
 </li>
@@ -524,7 +524,7 @@
 <span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="try-exceptx2">try-except語法錯誤x2</h2>
+<h2 id="try-exceptx3">try-except語法錯誤x3</h2>
 <p><strong>(1)</strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -570,6 +570,59 @@
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;必須輸入整數&#39;</span><span class="p">)</span>
 <span class="k">finally</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;分母不可為 0&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>(3)</strong></p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">logs</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">def</span> <span class="nf">put_equation</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="n">logs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;x + </span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="n">x</span><span class="o">+</span><span class="n">n</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">put_error</span><span class="p">():</span>
+    <span class="n">logs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">print_logs</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">logs</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;n: &#39;</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">put_equation</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="n">put_error</span><span class="p">()</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">print_logs</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="_2">知道發生某種錯誤</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>

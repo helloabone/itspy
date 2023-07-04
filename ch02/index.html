@@ -326,34 +326,48 @@
       
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
-    員工加薪
+    無此房型
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
-    猜數字遊戲
+    員工加薪
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
-    檢查學號
+    猜數字遊戲
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
-    質數判斷★★
+    檢查學號
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
+    搜尋目標數
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    質數判斷★★
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
     尋找數字★★
   </a>
   
@@ -519,34 +533,48 @@
       
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
-    員工加薪
+    無此房型
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
-    猜數字遊戲
+    員工加薪
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
-    檢查學號
+    猜數字遊戲
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
-    質數判斷★★
+    檢查學號
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
+    搜尋目標數
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    質數判斷★★
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
     尋找數字★★
   </a>
   
@@ -788,7 +816,30 @@
 <span class="sd">D. 09 行：不正確的比較運算</span>
 <span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_8">員工加薪</h2>
+<h2 id="_8">無此房型</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">room_list</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;單人房&#39;</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;雙人房&#39;</span><span class="p">,</span>
+    <span class="mi">4</span><span class="p">:</span> <span class="s1">&#39;家庭房&#39;</span>
+<span class="p">}</span>
+
+<span class="n">room_type</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;房型編號: &#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">room_type</span> <span class="ow">in</span> <span class="n">room_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">room_list</span><span class="p">[</span><span class="n">room_type</span><span class="p">])</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;無此房型&#39;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_9">員工加薪</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -811,7 +862,7 @@
     <span class="n">salary_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">salary_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="mf">1.06</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;員工編號: </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">  加薪後的薪資: </span><span class="si">{</span><span class="n">salary_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_9">猜數字遊戲</h2>
+<h2 id="_10">猜數字遊戲</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -852,7 +903,7 @@
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="nb">print</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_10">檢查學號</h2>
+<h2 id="_11">檢查學號</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -879,7 +930,36 @@
                 <span class="n">is_valid</span> <span class="o">=</span> <span class="kc">True</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">student_id</span><span class="p">,</span> <span class="n">is_valid</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_11">質數判斷★★</h2>
+<h2 id="_12">搜尋目標數</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">nlist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nlist</span><span class="p">)</span>
+<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">nlist</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nlist</span><span class="p">)</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">nlist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">nlist</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_13">質數判斷★★</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -888,7 +968,7 @@
 <span class="sd">★ 輸入 2 個整數，存到變數 A 和 B，輸出 A 到 B 之間的所有質數</span>
 <span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_12">尋找數字★★</h2>
+<h2 id="_14">尋找數字★★</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
