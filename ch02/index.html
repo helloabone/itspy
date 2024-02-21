@@ -8,24 +8,33 @@
       
       
       
+      
+        <link rel="prev" href="../ch01/">
+      
+      
+        <link rel="next" href="../ch03/">
+      
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.9">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
     
     
       
-        <title>2.決策和迴圈 - ITS Python 講義</title>
+        <title>決策和迴圈 - ITS Python 講義</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.08040f6c.min.css">
-        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
       
       
 
+
     
+    
+      
     
     
       
@@ -68,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +89,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="ITS Python 講義" class="md-header__button md-logo" aria-label="ITS Python 講義" data-md-component="logo">
       
@@ -89,6 +100,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
+      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
@@ -101,26 +113,29 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2.決策和迴圈
+              決策和迴圈
             
           </span>
         </div>
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
-          
-        
-      </form>
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
     
     
     
       <label class="md-header__button md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
@@ -129,12 +144,15 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -146,7 +164,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -176,6 +194,7 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="ITS Python 講義" class="md-nav__button md-logo" aria-label="ITS Python 講義" data-md-component="logo">
@@ -191,14 +210,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        首頁
+        
+  
+  <span class="md-ellipsis">
+    Py認證準備
+  </span>
+  
+
       </a>
     </li>
   
@@ -206,14 +230,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../ch00/" class="md-nav__link">
-        0.Py程式基礎
+        
+  
+  <span class="md-ellipsis">
+    Py程式基礎
+  </span>
+  
+
       </a>
     </li>
   
@@ -221,14 +250,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../ch01/" class="md-nav__link">
-        1.資料和運算
+        
+  
+  <span class="md-ellipsis">
+    資料和運算
+  </span>
+  
+
       </a>
     </li>
   
@@ -236,28 +270,39 @@
     
       
       
-      
-
   
   
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          2.決策和迴圈
+          
+  
+  <span class="md-ellipsis">
+    決策和迴圈
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        2.決策和迴圈
+        
+  
+  <span class="md-ellipsis">
+    決策和迴圈
+  </span>
+  
+
       </a>
       
         
@@ -276,99 +321,145 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    品牌英文大小寫
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    串列內容比較
+    <span class="md-ellipsis">
+      品牌英文大小寫
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    成績平均積點
+    <span class="md-ellipsis">
+      串列內容比較
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    調整分數
+    <span class="md-ellipsis">
+      成績平均積點
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
-    整數的位數
+    <span class="md-ellipsis">
+      調整分數
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    租車費用計算
+    <span class="md-ellipsis">
+      整數的位數
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
-    比較兩個數字
+    <span class="md-ellipsis">
+      租車費用計算
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
-    無此房型
+    <span class="md-ellipsis">
+      比較兩個數字
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
-    員工加薪
+    <span class="md-ellipsis">
+      無此房型
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
-    猜數字遊戲
+    <span class="md-ellipsis">
+      本週早餐優惠
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      星號字母E
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
-    檢查學號
+    <span class="md-ellipsis">
+      員工加薪
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
-    搜尋目標數
+    <span class="md-ellipsis">
+      猜數字遊戲
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
-    質數判斷★★
+    <span class="md-ellipsis">
+      檢查學號
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
-    尋找數字★★
+    <span class="md-ellipsis">
+      搜尋目標數
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      質數判斷★★
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      尋找數字★★
+    </span>
   </a>
   
 </li>
@@ -383,14 +474,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../ch03/" class="md-nav__link">
-        3.輸入和輸出
+        
+  
+  <span class="md-ellipsis">
+    輸入和輸出
+  </span>
+  
+
       </a>
     </li>
   
@@ -398,14 +494,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../ch04/" class="md-nav__link">
-        4.文件和結構
+        
+  
+  <span class="md-ellipsis">
+    文件和結構
+  </span>
+  
+
       </a>
     </li>
   
@@ -413,14 +514,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../ch05/" class="md-nav__link">
-        5.疑難和錯誤
+        
+  
+  <span class="md-ellipsis">
+    故障和錯誤
+  </span>
+  
+
       </a>
     </li>
   
@@ -428,14 +534,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../ch06/" class="md-nav__link">
-        6.模組和工具
+        
+  
+  <span class="md-ellipsis">
+    模組和工具
+  </span>
+  
+
       </a>
     </li>
   
@@ -443,14 +554,19 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../about/" class="md-nav__link">
-        著作權聲明
+        
+  
+  <span class="md-ellipsis">
+    著作權聲明
+  </span>
+  
+
       </a>
     </li>
   
@@ -483,99 +599,145 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    品牌英文大小寫
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    串列內容比較
+    <span class="md-ellipsis">
+      品牌英文大小寫
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    成績平均積點
+    <span class="md-ellipsis">
+      串列內容比較
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    調整分數
+    <span class="md-ellipsis">
+      成績平均積點
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
-    整數的位數
+    <span class="md-ellipsis">
+      調整分數
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    租車費用計算
+    <span class="md-ellipsis">
+      整數的位數
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
-    比較兩個數字
+    <span class="md-ellipsis">
+      租車費用計算
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
-    無此房型
+    <span class="md-ellipsis">
+      比較兩個數字
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
-    員工加薪
+    <span class="md-ellipsis">
+      無此房型
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
-    猜數字遊戲
+    <span class="md-ellipsis">
+      本週早餐優惠
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      星號字母E
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
-    檢查學號
+    <span class="md-ellipsis">
+      員工加薪
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
-    搜尋目標數
+    <span class="md-ellipsis">
+      猜數字遊戲
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
-    質數判斷★★
+    <span class="md-ellipsis">
+      檢查學號
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
-    尋找數字★★
+    <span class="md-ellipsis">
+      搜尋目標數
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      質數判斷★★
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      尋找數字★★
+    </span>
   </a>
   
 </li>
@@ -595,9 +757,9 @@
                   
 
 
-<h1 id="2">2.決策和迴圈</h1>
-<p><strong>控制帶有決策和迴圈的流程</strong></p>
-<h2 id="_1">品牌英文大小寫</h2>
+<h1 id="_1">決策和迴圈</h1>
+<p><strong>使用決策和迴圈進行流程控制</strong></p>
+<h2 id="_2">品牌英文大小寫</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -614,7 +776,7 @@
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;大寫小寫都有&#39;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_2">串列內容比較</h2>
+<h2 id="_3">串列內容比較</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -631,7 +793,7 @@
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;兩個串列內容不同&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_3">成績平均積點</h2>
+<h2 id="_4">成績平均積點</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -670,7 +832,7 @@
     <span class="n">grade</span> <span class="o">=</span> <span class="s1">&#39;F&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;成績等第:&quot;</span><span class="p">,</span> <span class="n">grade</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_4">調整分數</h2>
+<h2 id="_5">調整分數</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -701,7 +863,7 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_5">整數的位數</h2>
+<h2 id="_6">整數的位數</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -732,7 +894,7 @@
 <span class="k">elif</span> <span class="n">N</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;不判斷小於等於 0 的整數&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_6">租車費用計算</h2>
+<h2 id="_7">租車費用計算</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -781,7 +943,7 @@
     <span class="n">total</span> <span class="o">=</span> <span class="n">days</span> <span class="o">*</span> <span class="n">rate</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;租車費用: $</span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">total</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_7">比較兩個數字</h2>
+<h2 id="_8">比較兩個數字</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -816,7 +978,7 @@
 <span class="sd">D. 09 行：不正確的比較運算</span>
 <span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_8">無此房型</h2>
+<h2 id="_9">無此房型</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -839,7 +1001,73 @@
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;無此房型&#39;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_9">員工加薪</h2>
+<h2 id="_10">本週早餐優惠</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="n">daily_specials</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;燒肉蛋餅&quot;</span><span class="p">,</span> <span class="s2">&quot;鮪魚蛋餅&quot;</span><span class="p">,</span> <span class="s2">&quot;燒肉三明治&quot;</span><span class="p">,</span> <span class="s2">&quot;鮪魚三明治&quot;</span><span class="p">)</span>
+<span class="n">weekend_specials</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;豬排漢堡&quot;</span><span class="p">,</span> <span class="s2">&quot;雞排漢堡&quot;</span><span class="p">,</span> <span class="s2">&quot;牛肉漢堡&quot;</span><span class="p">)</span>
+<span class="c1"># 取得今天日期</span>
+<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="c1"># 調整測試日期</span>
+<span class="n">now</span> <span class="o">+=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%A&quot;</span><span class="p">))</span> <span class="c1"># 星期全寫</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%B&quot;</span><span class="p">))</span> <span class="c1"># 月份全寫</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%W&quot;</span><span class="p">))</span> <span class="c1"># 當年週次</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y&quot;</span><span class="p">))</span> <span class="c1"># 年份4碼</span>
+<span class="n">weekday</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%A&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;本週早餐優惠，今天供應：&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">weekday</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;Friday&quot;</span><span class="p">,</span> <span class="s2">&quot;Saturday&quot;</span><span class="p">,</span> <span class="s2">&quot;Sunday&quot;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;==週末優惠==&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">weekend_specials</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;==平日優惠==&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">daily_specials</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;星期代碼 </span><span class="si">{</span><span class="n">now</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">days_left</span> <span class="o">=</span> <span class="mi">6</span> <span class="o">-</span> <span class="n">now</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;本週優惠剩 </span><span class="si">{</span><span class="n">days_left</span><span class="si">}</span><span class="s2"> 天&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="e">星號字母E</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">letterE</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="k">for</span> <span class="n">ri</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">ci</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">ri</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">letterE</span> <span class="o">+=</span> <span class="s2">&quot;*&quot;</span>
+        <span class="k">elif</span> <span class="n">ci</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">letterE</span> <span class="o">+=</span> <span class="s2">&quot;*&quot;</span>
+    <span class="n">letterE</span> <span class="o">+=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letterE</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_11">員工加薪</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -862,7 +1090,7 @@
     <span class="n">salary_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">salary_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="mf">1.06</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;員工編號: </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">  加薪後的薪資: </span><span class="si">{</span><span class="n">salary_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_10">猜數字遊戲</h2>
+<h2 id="_12">猜數字遊戲</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -903,7 +1131,7 @@
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="nb">print</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_11">檢查學號</h2>
+<h2 id="_13">檢查學號</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -930,7 +1158,7 @@
                 <span class="n">is_valid</span> <span class="o">=</span> <span class="kc">True</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">student_id</span><span class="p">,</span> <span class="n">is_valid</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_12">搜尋目標數</h2>
+<h2 id="_14">搜尋目標數</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -959,7 +1187,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_13">質數判斷★★</h2>
+<h2 id="_15">質數判斷★★</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -968,7 +1196,7 @@
 <span class="sd">★ 輸入 2 個整數，存到變數 A 和 B，輸出 A 到 B 之間的所有質數</span>
 <span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_14">尋找數字★★</h2>
+<h2 id="_16">尋找數字★★</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -993,42 +1221,6 @@
       
         <footer class="md-footer">
   
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../ch01/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1.資料和運算" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              1.資料和運算
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../ch03/" class="md-footer__link md-footer__link--next" aria-label="Next: 3.輸入和輸出" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              3.輸入和輸出
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -1050,10 +1242,11 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
       
     
   </body>
