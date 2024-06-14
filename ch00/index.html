@@ -16,18 +16,18 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.14">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
     
     
       
-        <title>Py程式基礎 - ITS Python 講義</title>
+        <title>基礎語法結構 - ITS Python 講義</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.fad675c6.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -68,16 +68,13 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#py" class="md-skip">
+        <a href="#python" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Py程式基礎
+              基礎語法結構
             
           </span>
         </div>
@@ -126,11 +123,14 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
     
   
 </form>
       
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -219,7 +219,7 @@
         
   
   <span class="md-ellipsis">
-    Py認證準備
+    認證準備
   </span>
   
 
@@ -248,7 +248,7 @@
           
   
   <span class="md-ellipsis">
-    Py程式基礎
+    基礎語法結構
   </span>
   
 
@@ -259,7 +259,7 @@
         
   
   <span class="md-ellipsis">
-    Py程式基礎
+    基礎語法結構
   </span>
   
 
@@ -344,18 +344,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#npfor" class="md-nav__link">
+  <a href="#n-p-for" class="md-nav__link">
     <span class="md-ellipsis">
-      n的p次方(for)
+      n 的 p 次方(for)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#26for" class="md-nav__link">
+  <a href="#26-for" class="md-nav__link">
     <span class="md-ellipsis">
-      26個字母(for)
+      26 個字母(for)
     </span>
   </a>
   
@@ -626,18 +626,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#npfor" class="md-nav__link">
+  <a href="#n-p-for" class="md-nav__link">
     <span class="md-ellipsis">
-      n的p次方(for)
+      n 的 p 次方(for)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#26for" class="md-nav__link">
+  <a href="#26-for" class="md-nav__link">
     <span class="md-ellipsis">
-      26個字母(for)
+      26 個字母(for)
     </span>
   </a>
   
@@ -685,9 +685,9 @@
                   
 
 
-<h1 id="py">Py程式基礎</h1>
+<h1 id="python">Python 基礎語法結構</h1>
 <h2 id="_1">輸出字串或整數</h2>
-<p><strong>使用 print() 函式操作輸出</strong>
+<p>使用 print() 函式操作輸出
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -831,7 +831,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="npfor">n的p次方(for)</h2>
+<h2 id="n-p-for">n 的 p 次方(for)</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -840,7 +840,7 @@
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1"> 的 </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1"> 次方 = </span><span class="si">{</span><span class="n">n</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="26for">26個字母(for)</h2>
+<h2 id="26-for">26 個字母(for)</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -947,11 +947,19 @@
 
 
 
+
+
+
+
+
+
+
                 
               </article>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -980,10 +988,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.cd18aaf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
     
   </body>

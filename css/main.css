@@ -1,4 +1,5 @@
-body {
+body * {
+    font-size: 18px;
     font-family: Consolas;
 }
 
@@ -22,6 +23,7 @@ em {
     font-style: normal;
 }
 
+/*
 .linenos,
 pre code {
     font-size: 15px !important;
@@ -43,3 +45,4 @@ li code {
 table * {
     font-size: 15px !important;
 }
+*/
