@@ -23,26 +23,25 @@ em {
     font-style: normal;
 }
 
-/*
 .linenos,
 pre code {
-    font-size: 15px !important;
+    font-size: 18px !important;
 }
 
 .linenodiv * {
-    font-size: 15px !important;
+    font-size: 18px !important;
 }
+
 
 p,
 li {
-    font-size: 16px !important;
+    font-size: 18px !important;
 }
 
 li code {
-    font-size: 15px !important;
+    font-size: 18px !important;
 }
 
 table * {
-    font-size: 15px !important;
+    font-size: 18px !important;
 }
-*/
