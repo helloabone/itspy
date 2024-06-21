@@ -403,7 +403,25 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      今天日期時間
+      指定日期與設定格式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      現在日期
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      現在日期時間
     </span>
   </a>
   
@@ -419,7 +437,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       浮點數的絕對值
     </span>
@@ -484,7 +502,25 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      今天日期時間
+      指定日期與設定格式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      現在日期
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      現在日期時間
     </span>
   </a>
   
@@ -500,7 +536,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       浮點數的絕對值
     </span>
@@ -525,7 +561,7 @@
 
 <h1 id="_1">模組和工具</h1>
 <p><strong>使用模組和工具進行操作</strong></p>
-<h2 id="_2">今天日期時間</h2>
+<h2 id="_2">指定日期與設定格式</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -540,21 +576,203 @@
 <span class="normal">12</span>
 <span class="normal">13</span>
 <span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 從 datetime 模組匯入 datetime 類別</span>
-<span class="c1"># 並為 datetime 類別設定別名 dt</span>
-<span class="c1"># 後續用別名操作方法就行</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span> <span class="k">as</span> <span class="n">dt</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="n">adate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%m-</span><span class="si">%d</span><span class="s1">-%y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span> <span class="c1"># 月份2碼、日期2碼、年份2碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%m-</span><span class="si">%d</span><span class="s1">-%Y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span> <span class="c1"># 月份2碼、日期2碼、年份4碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%b-</span><span class="si">%d</span><span class="s1">-%Y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span> <span class="c1"># 英文月份簡寫、日期2碼、年份4碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%B-</span><span class="si">%d</span><span class="s1">-%Y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span> <span class="c1"># 英文月份全寫、日期2碼、年份4碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%b-</span><span class="si">%d</span><span class="s1">-%y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span> <span class="c1"># 英文月份簡寫、日期2碼、年份2碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%B-</span><span class="si">%d</span><span class="s1">-%y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span> <span class="c1"># 英文月份全寫、日期2碼、年份2碼</span>
 
-<span class="c1"># 將今天日期時間存入 today 變數</span>
-<span class="n">today</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
-<span class="c1"># 輸出今天日期時間</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">[輸出]</span>
+<span class="sd">06-21-24</span>
+<span class="sd">06-21-2024</span>
+<span class="sd">Jun-21-2024</span>
+<span class="sd">June-21-2024</span>
+<span class="sd">Jun-21-24</span>
+<span class="sd">June-21-24</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_3">現在日期</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 從 datetime 模組匯入 date 類別</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+
+<span class="c1"># 將今天日期存入 today 變數</span>
+<span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+<span class="c1"># 輸出今天日期</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="p">)</span>
-<span class="c1"># 輸出年</span>
+<span class="c1"># 輸出年、月、日</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
-<span class="c1"># 輸出月</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
-<span class="c1"># 輸出日</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%m-</span><span class="si">%d</span><span class="s1">-%y&#39;</span><span class="p">))</span> <span class="c1"># 月份2碼、日期2碼、年份2碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%m-</span><span class="si">%d</span><span class="s1">-%Y&#39;</span><span class="p">))</span> <span class="c1"># 月份2碼、日期2碼、年份4碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%b-</span><span class="si">%d</span><span class="s1">-%Y&#39;</span><span class="p">))</span> <span class="c1"># 英文月份簡寫、日期2碼、年份4碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%B-</span><span class="si">%d</span><span class="s1">-%Y&#39;</span><span class="p">))</span> <span class="c1"># 英文月份全寫、日期2碼、年份4碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%b-</span><span class="si">%d</span><span class="s1">-%y&#39;</span><span class="p">))</span> <span class="c1"># 英文月份簡寫、日期2碼、年份2碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%B-</span><span class="si">%d</span><span class="s1">-%y&#39;</span><span class="p">))</span> <span class="c1"># 英文月份全寫、日期2碼、年份2碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%a</span><span class="s1">&#39;</span><span class="p">))</span> <span class="c1"># 英文星期簡寫</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%A&#39;</span><span class="p">))</span> <span class="c1"># 英文星期全寫</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%w&#39;</span><span class="p">))</span> <span class="c1"># 星期代碼 0 ~ 6 (0 是星期日)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>      <span class="c1"># 星期代碼 0 ~ 6 (0 是星期一)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%W&#39;</span><span class="p">))</span> <span class="c1"># 年度週序代碼</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">[輸出範例]</span>
+<span class="sd">2024-06-21</span>
+<span class="sd">2024</span>
+<span class="sd">6</span>
+<span class="sd">21</span>
+<span class="sd">06-21-24</span>
+<span class="sd">06-21-2024</span>
+<span class="sd">Jun-21-2024</span>
+<span class="sd">June-21-2024</span>
+<span class="sd">Jun-21-24</span>
+<span class="sd">June-21-24</span>
+<span class="sd">Fri</span>
+<span class="sd">Friday</span>
+<span class="sd">5</span>
+<span class="sd">4</span>
+<span class="sd">25</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_4">現在日期時間</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 從 datetime 模組匯入 datetime 類別</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="c1"># 將現在日期時間存入 today 變數</span>
+<span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<span class="c1"># 輸出現在日期時間</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">today</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="p">)</span>
+<span class="c1"># 輸出年、月、日</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%m-</span><span class="si">%d</span><span class="s1">-%y&#39;</span><span class="p">))</span> <span class="c1"># 月份2碼、日期2碼、年份2碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%m-</span><span class="si">%d</span><span class="s1">-%Y&#39;</span><span class="p">))</span> <span class="c1"># 月份2碼、日期2碼、年份4碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%b-</span><span class="si">%d</span><span class="s1">-%Y&#39;</span><span class="p">))</span> <span class="c1"># 英文月份簡寫、日期2碼、年份4碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%B-</span><span class="si">%d</span><span class="s1">-%Y&#39;</span><span class="p">))</span> <span class="c1"># 英文月份全寫、日期2碼、年份4碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%b-</span><span class="si">%d</span><span class="s1">-%y&#39;</span><span class="p">))</span> <span class="c1"># 英文月份簡寫、日期2碼、年份2碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%B-</span><span class="si">%d</span><span class="s1">-%y&#39;</span><span class="p">))</span> <span class="c1"># 英文月份全寫、日期2碼、年份2碼</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%a</span><span class="s1">&#39;</span><span class="p">))</span> <span class="c1"># 英文星期簡寫</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%A&#39;</span><span class="p">))</span> <span class="c1"># 英文星期全寫</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%w&#39;</span><span class="p">))</span> <span class="c1"># 星期代碼 0 ~ 6 (0 是星期日)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>      <span class="c1"># 星期代碼 0 ~ 6 (0 是星期一)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%W&#39;</span><span class="p">))</span> <span class="c1"># 年度週序代碼</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">[輸出範例]</span>
+<span class="sd">2024-06-21 23:08:02.745124</span>
+<span class="sd">2024-06-21 23:08:02.745124</span>
+<span class="sd">2024</span>
+<span class="sd">6</span>
+<span class="sd">21</span>
+<span class="sd">06-21-24</span>
+<span class="sd">06-21-2024</span>
+<span class="sd">Jun-21-2024</span>
+<span class="sd">June-21-2024</span>
+<span class="sd">Jun-21-24</span>
+<span class="sd">June-21-24</span>
+<span class="sd">Fri</span>
+<span class="sd">Friday</span>
+<span class="sd">5</span>
+<span class="sd">4</span>
+<span class="sd">25</span>
+<span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="x2">指定亂數範圍x2</h2>
 <p><strong>(1)</strong></p>
@@ -577,7 +795,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="o">*</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_3">浮點數的絕對值</h2>
+<h2 id="_5">浮點數的絕對值</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
