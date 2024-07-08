@@ -310,9 +310,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#x2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      判讀資料類別x2
+      判讀資料類別(1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      判讀資料類別(2)
     </span>
   </a>
   
@@ -337,18 +346,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#x4" class="md-nav__link">
+  <a href="#1_1" class="md-nav__link">
     <span class="md-ellipsis">
-      運算子優先序x4
+      運算子優先序(1)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#x2_1" class="md-nav__link">
+  <a href="#2_1" class="md-nav__link">
     <span class="md-ellipsis">
-      字串合併x2
+      運算子優先序(2)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      運算子優先序(3)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      運算子優先序(4)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      字串合併(1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      字串合併(2)
     </span>
   </a>
   
@@ -610,9 +655,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#x2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      判讀資料類別x2
+      判讀資料類別(1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      判讀資料類別(2)
     </span>
   </a>
   
@@ -637,18 +691,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#x4" class="md-nav__link">
+  <a href="#1_1" class="md-nav__link">
     <span class="md-ellipsis">
-      運算子優先序x4
+      運算子優先序(1)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#x2_1" class="md-nav__link">
+  <a href="#2_1" class="md-nav__link">
     <span class="md-ellipsis">
-      字串合併x2
+      運算子優先序(2)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      運算子優先序(3)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      運算子優先序(4)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      字串合併(1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      字串合併(2)
     </span>
   </a>
   
@@ -746,154 +836,15 @@
 <h2 id="_2">打怪的時數</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">start</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;你幾點開始打怪的? &quot;</span><span class="p">)</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 打怪的時數</span>
+
+<span class="n">start</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;你幾點開始打怪的? &quot;</span><span class="p">)</span>
 <span class="n">end</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;現在幾點? &quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;你已經打了 &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">end</span><span class="p">)</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">start</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; 小時&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="x2">判讀資料類別x2</h2>
-<p><strong>(1)</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">x1</span> <span class="o">=</span> <span class="s2">&quot;8&quot;</span>
-<span class="n">y1</span> <span class="o">=</span> <span class="mi">7</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">x1</span> <span class="o">*</span> <span class="n">y1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-
-<span class="n">x2</span> <span class="o">=</span> <span class="mi">8</span>
-<span class="n">y2</span> <span class="o">=</span> <span class="mi">7</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">/</span> <span class="n">y2</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
-
-<span class="n">x3</span> <span class="o">=</span> <span class="mf">8.7</span>
-<span class="n">y3</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">x3</span> <span class="o">/</span> <span class="n">y3</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
-</code></pre></div></td></tr></table></div>
-<p><strong>(2)</strong></p>
-<p><em>測資檔</em>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>16
-False
-&#39;Python&#39;
-9.87
-&quot;5.38&quot;
-+2E11
-&quot;True&quot;
-</code></pre></div></td></tr></table></div>
-<em>程式檔</em>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="c1"># 1. input() 讀入一行測資</span>
-        <span class="c1"># 2. eval() 解析資料值</span>
-        <span class="c1"># 3. type() 判讀資料類別</span>
-        <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">())))</span>
-    <span class="k">except</span> <span class="ne">EOFError</span><span class="p">:</span>
-        <span class="c1"># 測資讀完，會發生 EOFError</span>
-        <span class="c1"># EOF: End Of File</span>
-        <span class="c1"># 立即離開 while 迴圈</span>
-        <span class="k">break</span>
-</code></pre></div></td></tr></table></div></p>
-<h2 id="_3">判讀布林值</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">None</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="or">特別的 or 運算</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="mi">0</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">None</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="x4">運算子優先序x4</h2>
-<p><strong>(1)</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 括號 &gt; 指數 &gt; 乘、除、商、餘 &gt; 加、減</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">24</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">9</span>
-<span class="n">answer</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">%</span> <span class="n">b</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span> <span class="o">**</span> <span class="mf">4.0</span> <span class="o">-</span> <span class="n">b</span>
-<span class="c1"># 正確選項為 28.0 或 28</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<p><strong>(2)</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 括號 &gt; 指數 &gt; 正、負、反 &gt; 乘、除、商、餘 &gt; 加、減 &gt; 且、或</span>
-
-<span class="c1"># 指數 &gt; 正數(+)、負數(-)、反相(not)</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">((</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">+</span><span class="mi">2</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="o">-</span><span class="mi">3</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span> <span class="o">+</span> <span class="mi">8</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<p><strong>(3)</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 括號 &gt; 指數 &gt; 正、負、反 &gt; 乘、除、商、餘 &gt; 加、減 &gt; 且、或</span>
-
-<span class="c1"># 且(and)的邏輯運算：兩方都為True才是True</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">True</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">and</span> <span class="mi">5</span><span class="o">*</span><span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>
-
-<span class="c1"># 或(or)的邏輯運算：其中一方為True就是True</span>
-<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">or</span> <span class="mi">5</span><span class="o">-</span><span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<p><strong>(4)</strong></p>
+<h2 id="1">判讀資料類別(1)</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -909,7 +860,188 @@ False
 <span class="normal">13</span>
 <span class="normal">14</span>
 <span class="normal">15</span>
-<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 括號 &gt; 指數 &gt; 正、負、反 &gt; 乘、除、商、餘 &gt; 加、減 &gt; 且、或</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 判讀資料類別(1)</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="s2">&quot;8&quot;</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">x1</span> <span class="o">*</span> <span class="n">y1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a:&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+
+<span class="n">x2</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">/</span> <span class="n">y2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b:&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+
+<span class="n">x3</span> <span class="o">=</span> <span class="mf">8.7</span>
+<span class="n">y3</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">x3</span> <span class="o">/</span> <span class="n">y3</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c:&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="2">判讀資料類別(2)</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 判讀資料類別(2)</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">[測資開始]</span>
+<span class="sd">16</span>
+<span class="sd">False</span>
+<span class="sd">&#39;Python&#39;</span>
+<span class="sd">9.87</span>
+<span class="sd">&quot;5.38&quot;</span>
+<span class="sd">+2E11</span>
+<span class="sd">&quot;True&quot;</span>
+<span class="sd">[測資結束]</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># 1. input() 讀入一行測資</span>
+        <span class="c1"># 2. eval() 解析資料值</span>
+        <span class="c1"># 3. type() 判讀資料類別</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">())))</span>
+    <span class="k">except</span> <span class="ne">EOFError</span><span class="p">:</span>
+        <span class="c1"># 測資讀完，會發生 EOFError</span>
+        <span class="c1"># EOF: End Of File</span>
+        <span class="c1"># 立即離開 while 迴圈</span>
+        <span class="k">break</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_3">判讀布林值</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 判讀布林值</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">None</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="or">特別的 or 運算</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 特別的 or 運算</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="mi">0</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">None</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">False</span> <span class="ow">or</span> <span class="mi">7</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="1_1">運算子優先序(1)</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 運算子優先序(1)</span>
+
+<span class="c1"># 括號 &gt; 指數 &gt; 乘、除、商、餘 &gt; 加、減</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">24</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">%</span> <span class="n">b</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span> <span class="o">**</span> <span class="mf">4.0</span> <span class="o">-</span> <span class="n">b</span>
+<span class="c1"># 正確選項為 28.0 或 28</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="2_1">運算子優先序(2)</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 運算子優先序(2)</span>
+
+<span class="c1"># 括號 &gt; 指數 &gt; 正、負、反 &gt; 乘、除、商、餘 &gt; 加、減 &gt; 且、或</span>
+
+<span class="c1"># 指數 &gt; 正數(+)、負數(-)、反相(not)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">((</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">+</span><span class="mi">2</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="o">-</span><span class="mi">3</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span> <span class="o">+</span> <span class="mi">8</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="3">運算子優先序(3)</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 運算子優先序(3)</span>
+
+<span class="c1"># 括號 &gt; 指數 &gt; 正、負、反 &gt; 乘、除、商、餘 &gt; 加、減 &gt; 且、或</span>
+
+<span class="c1"># 且(and)的邏輯運算：兩方都為True才是True</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">and</span> <span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">and</span> <span class="mi">5</span><span class="o">*</span><span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># 或(or)的邏輯運算：其中一方為True就是True</span>
+<span class="nb">print</span><span class="p">(</span><span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="ow">or</span> <span class="mi">5</span><span class="o">-</span><span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="4">運算子優先序(4)</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 運算子優先序(4)</span>
+
+<span class="c1"># 括號 &gt; 指數 &gt; 正、負、反 &gt; 乘、除、商、餘 &gt; 加、減 &gt; 且、或</span>
 
 <span class="c1"># 反(not)的邏輯運算：</span>
 <span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span><span class="p">)</span>
@@ -926,16 +1058,19 @@ False
 <span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="ow">not</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="x2_1">字串合併x2</h2>
-<p><strong>(1)</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">astr</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
+<h2 id="1_2">字串合併(1)</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 字串合併(1)</span>
+
+<span class="n">astr</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">astr</span><span class="p">)</span>
 <span class="n">bstr</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
 <span class="n">astr</span> <span class="o">+=</span> <span class="n">bstr</span>
@@ -944,15 +1079,19 @@ False
 <span class="n">bstr</span> <span class="o">+=</span> <span class="n">astr</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">bstr</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<p><strong>(2)</strong></p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">astr</span> <span class="o">=</span> <span class="s1">&#39;123&#39;</span>
+<h2 id="2_2">字串合併(2)</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 字串合併(2)</span>
+
+<span class="n">astr</span> <span class="o">=</span> <span class="s1">&#39;123&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">astr</span><span class="p">)</span>
 <span class="n">bstr</span> <span class="o">=</span> <span class="s1">&#39;456&#39;</span>
 <span class="n">astr</span> <span class="o">+=</span> <span class="n">bstr</span>
@@ -973,7 +1112,11 @@ False
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;你目前幾歲? &quot;</span><span class="p">)</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 出生西元年</span>
+
+<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;你目前幾歲? &quot;</span><span class="p">)</span>
 <span class="n">this_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;現在西元幾年? &quot;</span><span class="p">)</span>
 <span class="n">birth_year</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">this_year</span><span class="p">)</span> <span class="o">-</span> <span class="nb">eval</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
 <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;你的出生年是 &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">birth_year</span><span class="p">)</span>
@@ -989,7 +1132,11 @@ False
 <h2 id="_5">數值是否存在串列</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">alist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 數值是否存在串列</span>
+
+<span class="n">alist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="ow">in</span> <span class="n">alist</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="mi">4</span> <span class="ow">in</span> <span class="n">alist</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
@@ -1004,7 +1151,11 @@ False
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">alist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">]</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 兩個串列比較</span>
+
+<span class="n">alist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">]</span>
 <span class="n">blist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">alist</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">blist</span><span class="p">)</span>
@@ -1028,7 +1179,11 @@ False
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 全班的 ITS Python 分數</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 平均分數</span>
+
+<span class="c1"># 全班的 ITS Python 分數</span>
 <span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">810</span><span class="p">,</span> <span class="mi">856</span><span class="p">,</span> <span class="mi">956</span><span class="p">,</span> <span class="mi">977</span><span class="p">,</span> <span class="mi">878</span><span class="p">]</span>
 <span class="c1"># 全班人數</span>
 <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
@@ -1052,7 +1207,11 @@ False
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 允許輸入浮點數，如此可以表示得更精準</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 跑步配速計算</span>
+
+<span class="c1"># 允許輸入浮點數，如此可以表示得更精準</span>
 <span class="n">meters</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;經過多少公尺? &quot;</span><span class="p">))</span>
 <span class="c1"># 經過距離換為公里</span>
 <span class="n">kms</span> <span class="o">=</span> <span class="n">meters</span> <span class="o">/</span> <span class="mi">1000</span>
@@ -1074,7 +1233,11 @@ False
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 串列加乘合併</span>
+
+<span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 <span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
 
 <span class="c1"># list1 和 list2 合併後，存到 list3</span>
@@ -1086,15 +1249,19 @@ False
 <span class="nb">print</span><span class="p">(</span><span class="n">list4</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="_10">字串數據切取</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 字串物件[start:stop:step]</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 字串數據切取</span>
+
+<span class="c1"># 字串物件[start:stop:step]</span>
 
 <span class="n">letters</span> <span class="o">=</span> <span class="s2">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">letters</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">15</span><span class="p">])</span>
@@ -1115,7 +1282,11 @@ False
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 串列物件[start:stop:step]</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 串列數據切取</span>
+
+<span class="c1"># 串列物件[start:stop:step]</span>
 
 <span class="n">alist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">alist</span><span class="p">[</span><span class="mi">0</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>

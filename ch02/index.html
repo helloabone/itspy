@@ -780,14 +780,18 @@
 <h1 id="_1">決策和迴圈</h1>
 <p><strong>使用決策和迴圈進行流程控制</strong></p>
 <h2 id="_2">品牌英文大小寫</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">brand_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;輸入品牌英文名字: &quot;</span><span class="p">)</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 品牌英文大小寫</span>
+
+<span class="n">brand_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;輸入品牌英文名字: &quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">brand_name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">==</span> <span class="n">brand_name</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;全部大寫&quot;</span><span class="p">)</span>
@@ -797,14 +801,18 @@
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;大寫小寫都有&#39;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="_3">串列內容比較</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">alist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 串列內容比較</span>
+
+<span class="n">alist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">blist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="s2">&quot;3&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;alist:&#39;</span><span class="p">,</span> <span class="n">alist</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;blist:&#39;</span><span class="p">,</span> <span class="n">blist</span><span class="p">)</span>
@@ -832,7 +840,11 @@
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 分數範圍    成績等第</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 成績平均積點</span>
+
+<span class="c1"># 分數範圍    成績等第</span>
 <span class="c1"># 90 ~ 100    A</span>
 <span class="c1"># 80 ~  89    B</span>
 <span class="c1"># 70 ~  79    C</span>
@@ -867,7 +879,11 @@
 <span class="normal">12</span>
 <span class="normal">13</span>
 <span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 下列是調整分數的程式：</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 調整分數</span>
+
+<span class="c1"># 下列是調整分數的程式：</span>
 <span class="c1"># 若 score 輸入 75 且 rank 輸入 5</span>
 <span class="c1"># score 將調整為幾分？</span>
 
@@ -898,7 +914,11 @@
 <span class="normal">12</span>
 <span class="normal">13</span>
 <span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;輸入 1 個整數: &quot;</span><span class="p">))</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 整數的位數</span>
+
+<span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;輸入 1 個整數: &quot;</span><span class="p">))</span>
 <span class="n">digits</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">if</span> <span class="n">N</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">N</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
@@ -938,7 +958,11 @@
 <span class="normal">21</span>
 <span class="normal">22</span>
 <span class="normal">23</span>
-<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 租車費用計算</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">程式設計必須符合以下條件：</span>
 <span class="sd">* 每天費用 100 塊</span>
 <span class="sd">* 晚上 11 點以後歸還，加收一天費用</span>
@@ -980,7 +1004,11 @@
 <span class="normal">14</span>
 <span class="normal">15</span>
 <span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="mi">01</span> <span class="n">n1</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;輸入第1個數: &quot;</span><span class="p">))</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 比較兩個數字</span>
+
+<span class="mi">01</span> <span class="n">n1</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;輸入第1個數: &quot;</span><span class="p">))</span>
 <span class="mi">02</span> <span class="n">n2</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;輸入第2個數: &quot;</span><span class="p">))</span>
 <span class="mi">03</span> <span class="k">if</span> <span class="n">n1</span> <span class="o">=</span> <span class="n">n2</span><span class="p">:</span>
 <span class="mi">04</span>     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;數字1等於數字2&quot;</span><span class="p">)</span>
@@ -1009,7 +1037,11 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">room_list</span> <span class="o">=</span> <span class="p">{</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 無此房型</span>
+
+<span class="n">room_list</span> <span class="o">=</span> <span class="p">{</span>
     <span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;單人房&#39;</span><span class="p">,</span>
     <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;雙人房&#39;</span><span class="p">,</span>
     <span class="mi">4</span><span class="p">:</span> <span class="s1">&#39;家庭房&#39;</span>
@@ -1044,7 +1076,11 @@
 <span class="normal">20</span>
 <span class="normal">21</span>
 <span class="normal">22</span>
-<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 本週早餐優惠</span>
+
+<span class="kn">import</span> <span class="nn">datetime</span>
 <span class="n">daily_specials</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;燒肉蛋餅&quot;</span><span class="p">,</span> <span class="s2">&quot;鮪魚蛋餅&quot;</span><span class="p">,</span> <span class="s2">&quot;燒肉三明治&quot;</span><span class="p">,</span> <span class="s2">&quot;鮪魚三明治&quot;</span><span class="p">)</span>
 <span class="n">weekend_specials</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;豬排漢堡&quot;</span><span class="p">,</span> <span class="s2">&quot;雞排漢堡&quot;</span><span class="p">,</span> <span class="s2">&quot;牛肉漢堡&quot;</span><span class="p">)</span>
 <span class="c1"># 取得今天日期</span>
@@ -1069,15 +1105,19 @@
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;本週優惠剩 </span><span class="si">{</span><span class="n">days_left</span><span class="si">}</span><span class="s2"> 天&quot;</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="e">星號字母 E</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">letterE</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 星號字母 E</span>
+
+<span class="n">letterE</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
 <span class="k">for</span> <span class="n">ri</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">ci</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">ri</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
@@ -1098,7 +1138,11 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">salary_list</span> <span class="o">=</span> <span class="p">[</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 員工加薪</span>
+
+<span class="n">salary_list</span> <span class="o">=</span> <span class="p">[</span>
     <span class="mi">760000</span><span class="p">,</span> <span class="mi">580000</span><span class="p">,</span> <span class="mi">460000</span><span class="p">,</span> <span class="mi">487000</span><span class="p">,</span>
     <span class="mi">810000</span><span class="p">,</span> <span class="mi">385000</span><span class="p">,</span> <span class="mi">412000</span><span class="p">,</span> <span class="mi">660000</span><span class="p">,</span>
 <span class="p">]</span>
@@ -1130,7 +1174,11 @@
 <span class="normal">17</span>
 <span class="normal">18</span>
 <span class="normal">19</span>
-<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 猜數字遊戲</span>
+
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
 <span class="c1"># 電腦從 1 到 10 選一個數字，存到 target</span>
 <span class="n">target</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="c1"># 設定最多猜測次數，存到 limit</span>
@@ -1164,7 +1212,11 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">student_id</span> <span class="o">=</span> <span class="s2">&quot;nobody&quot;</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 檢查學號</span>
+
+<span class="n">student_id</span> <span class="o">=</span> <span class="s2">&quot;nobody&quot;</span>
 <span class="k">while</span> <span class="n">student_id</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
     <span class="n">is_valid</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="n">student_id</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;輸入學號(ddd-dd-dd): &quot;</span><span class="p">)</span>
@@ -1192,7 +1244,11 @@
 <span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
-<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 搜尋目標數</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
 
 <span class="n">nlist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">nlist</span><span class="p">)</span>
@@ -1211,7 +1267,11 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 質數判斷★★</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">★ 輸入 1 個整數，存到變數 N，輸出 N 是否為質數</span>
 <span class="sd">★ 輸入 2 個整數，存到變數 A 和 B，輸出 A 到 B 之間的所有質數</span>
 <span class="sd">&quot;&quot;&quot;</span>
@@ -1220,7 +1280,11 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 尋找數字★★</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">★ 將 10 個隨機整數放到串列，輸出最大值和最小值</span>
 <span class="sd">★ 輸入 1 個整數 N，從隨機整數串列中找出比 N 還要大且最接近 N 的數</span>
 <span class="sd">&quot;&quot;&quot;</span>

@@ -397,7 +397,7 @@
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      輸出檔案第一行
+      莓果銷售數量★
     </span>
   </a>
   
@@ -406,7 +406,7 @@
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      檔案處理錯誤
+      輸出檔案第一行
     </span>
   </a>
   
@@ -415,7 +415,7 @@
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      讀取銷售資料
+      檔案處理錯誤
     </span>
   </a>
   
@@ -424,7 +424,7 @@
         <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      莓果銷售數量★
+      讀取銷售資料檔案
     </span>
   </a>
   
@@ -630,7 +630,7 @@
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      輸出檔案第一行
+      莓果銷售數量★
     </span>
   </a>
   
@@ -639,7 +639,7 @@
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      檔案處理錯誤
+      輸出檔案第一行
     </span>
   </a>
   
@@ -648,7 +648,7 @@
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      讀取銷售資料
+      檔案處理錯誤
     </span>
   </a>
   
@@ -657,7 +657,7 @@
         <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      莓果銷售數量★
+      讀取銷售資料檔案
     </span>
   </a>
   
@@ -692,20 +692,28 @@
 <h2 id="_2">浮點數格式</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="mf">123456.789</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 浮點數格式</span>
+
+<span class="n">num</span> <span class="o">=</span> <span class="mf">123456.789</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:,.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="_3">產品銷量</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;產品名稱: &#39;</span><span class="p">)</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 產品銷量</span>
+
+<span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;產品名稱: &#39;</span><span class="p">)</span>
 <span class="n">price</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;產品單價: &#39;</span><span class="p">))</span>
 <span class="n">sales</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;銷售數量: &#39;</span><span class="p">))</span>
 <span class="n">total</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="n">sales</span>
@@ -727,7 +735,11 @@
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;請輸入名字: &quot;</span><span class="p">)</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 計算平均分數</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;請輸入名字: &quot;</span><span class="p">)</span>
 <span class="n">total</span> <span class="o">=</span> <span class="n">score</span> <span class="o">=</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">score</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
     <span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;輸入分數，輸入 -1 則結束: &quot;</span><span class="p">))</span>
@@ -751,7 +763,11 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">total</span> <span class="o">=</span> <span class="n">count</span> <span class="o">=</span> <span class="n">done</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 平均星級評等</span>
+
+<span class="n">total</span> <span class="o">=</span> <span class="n">count</span> <span class="o">=</span> <span class="n">done</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">done</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
     <span class="n">rating</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;輸入評等(1-5)，輸入 -1 則結束: &quot;</span><span class="p">))</span>
     <span class="k">if</span> <span class="n">rating</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
@@ -782,7 +798,11 @@
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">print_table</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 外匯換算</span>
+
+<span class="k">def</span> <span class="nf">print_table</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
         <span class="n">fields</span> <span class="o">=</span> <span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
         <span class="n">fields</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">money</span> <span class="o">/</span> <span class="nb">eval</span><span class="p">(</span><span class="n">fields</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
@@ -807,101 +827,17 @@
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;Apple&#39;</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 字串格式化參數順序</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;Apple&#39;</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;Banana&#39;</span>
 <span class="n">c</span> <span class="o">=</span> <span class="s1">&#39;Cherry&#39;</span>
 <span class="n">fruit</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{1}</span><span class="s2">, </span><span class="si">{0}</span><span class="s2"> and </span><span class="si">{2}</span><span class="s2">&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_8">輸出檔案第一行</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">檔案處理函式設計必須符合以下條件：</span>
-<span class="sd">* 如果指定檔案不存在，回傳 &quot;檔案不存在&quot;</span>
-<span class="sd">* 如果該檔案存在，回傳第一行內容</span>
-<span class="sd">&quot;&quot;&quot;</span>
-
-<span class="kn">import</span> <span class="nn">os</span>
-
-<span class="k">def</span> <span class="nf">get_first_line_of_file</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fho</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">fho</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;檔案不存在&quot;</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">get_first_line_of_file</span><span class="p">(</span><span class="s1">&#39;data1.txt&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">get_first_line_of_file</span><span class="p">(</span><span class="s1">&#39;data2.txt&#39;</span><span class="p">))</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="_9">檔案處理錯誤</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 函式功能：讀取檔案後，將檔案中的每一行列印出來</span>
-<span class="mi">01</span> <span class="k">def</span> <span class="nf">print_file</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
-<span class="mi">02</span>     <span class="n">line</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="mi">03</span>     <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
-<span class="mi">04</span>         <span class="n">data</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="mi">05</span>         <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
-<span class="mi">06</span>             <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
-
-<span class="c1"># 假設 data.txt 和程式放在同一個資料夾</span>
-<span class="n">print_file</span><span class="p">(</span><span class="s1">&#39;data.txt&#39;</span><span class="p">)</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="sd"># 呼叫執行這個函式，會收到 03 行的錯誤，錯誤的原因應該是什麼？</span>
-<span class="sd">A. 需要匯入 os 模組而沒有匯入</span>
-<span class="sd">B. path 方法並不存在 os 模組中</span>
-<span class="sd">C. path 物件中不存在 isfile 方法</span>
-<span class="sd">D. isfile 方法不接受一個參數</span>
-<span class="sd">&quot;&quot;&quot;</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="_10">讀取銷售資料</h2>
-<p><em>測資檔</em>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>&#39;A01&#39;, 180, 1
-&#39;A02&#39;, 240, 5
-
-&#39;B01&#39;, 195, 3
-&#39;B02&#39;, 215, 4
-
-&#39;C01&#39;, 360, 2
-</code></pre></div></td></tr></table></div>
-<em>程式檔</em>
+<h2 id="_8">莓果銷售數量★</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -920,7 +856,152 @@
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 莓果銷售數量★</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">輸出格式要求：</span>
+<span class="sd">水果名稱兩側標字串雙引號之後接一個英文冒號及空白，再接數量</span>
+
+<span class="sd">例如：</span>
+<span class="sd">&quot;strawberry&quot;: 4</span>
+<span class="sd">&quot;blackberry&quot;: 7</span>
+<span class="sd">&quot;blueberry&quot;: 5</span>
+<span class="sd">&quot;raspberry&quot;: 4</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">fruit_list</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;strawberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;strawberry&#39;</span><span class="p">,</span> <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;strawberry&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span>
+<span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_9">輸出檔案第一行</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 輸出檔案第一行</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">檔案處理函式設計必須符合以下條件：</span>
+<span class="sd">* 如果指定檔案不存在，回傳 &quot;檔案不存在&quot;</span>
+<span class="sd">* 如果該檔案存在，回傳第一行內容</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">get_first_line_of_file</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fho</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">fho</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;檔案不存在&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">get_first_line_of_file</span><span class="p">(</span><span class="s1">&#39;data1.txt&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">get_first_line_of_file</span><span class="p">(</span><span class="s1">&#39;data2.txt&#39;</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_10">檔案處理錯誤</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 檔案處理錯誤</span>
+
+<span class="c1"># 函式功能：讀取檔案後，將檔案中的每一行列印出來</span>
+<span class="mi">01</span> <span class="k">def</span> <span class="nf">print_file</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<span class="mi">02</span>     <span class="n">line</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="mi">03</span>     <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<span class="mi">04</span>         <span class="n">data</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="mi">05</span>         <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+<span class="mi">06</span>             <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+
+<span class="c1"># 假設 data.txt 和程式放在同一個資料夾</span>
+<span class="n">print_file</span><span class="p">(</span><span class="s1">&#39;data.txt&#39;</span><span class="p">)</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd"># 呼叫執行這個函式，會收到 03 行的錯誤，錯誤的原因應該是什麼？</span>
+<span class="sd">A. 需要匯入 os 模組而沒有匯入</span>
+<span class="sd">B. path 方法並不存在 os 模組中</span>
+<span class="sd">C. path 物件中不存在 isfile 方法</span>
+<span class="sd">D. isfile 方法不接受一個參數</span>
+<span class="sd">&quot;&quot;&quot;</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="_11">讀取銷售資料檔案</h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 讀取銷售資料檔案</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">[測資開始]</span>
+<span class="sd">&#39;A01&#39;, 180, 1</span>
+<span class="sd">&#39;B02&#39;, 240, 5</span>
+
+<span class="sd">&#39;C01&#39;, 195, 3</span>
+<span class="sd">&#39;D02&#39;, 215, 4</span>
+
+<span class="sd">&#39;E01&#39;, 360, 2</span>
+
+<span class="sd">[測資結束]</span>
+
 <span class="sd">檔案處理設計必須符合以下條件：</span>
 <span class="sd">* 檔案有多行，一行一筆銷售資料</span>
 <span class="sd">* 資料欄位包含：產品編號、產品單價、購買數量</span>
@@ -939,41 +1020,6 @@
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;End of File&quot;</span><span class="p">)</span>
         <span class="k">break</span>
 <span class="n">fho</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</code></pre></div></td></tr></table></div></p>
-<h2 id="_11">莓果銷售數量★</h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">輸出格式要求：</span>
-<span class="sd">水果名稱兩側標字串雙引號之後接一個英文冒號及空白，再接數量</span>
-
-<span class="sd">例如：</span>
-<span class="sd">&quot;strawberry&quot;: 4</span>
-<span class="sd">&quot;blackberry&quot;: 7</span>
-<span class="sd">&quot;blueberry&quot;: 5</span>
-<span class="sd">&quot;raspberry&quot;: 4</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="n">fruit_list</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">&#39;strawberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;strawberry&#39;</span><span class="p">,</span> <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;strawberry&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span>
-<span class="p">]</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="_12">檔案附加內容★</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -994,7 +1040,11 @@
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 檔案附加內容★</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">檔案處理設計必須符合以下條件：</span>
 <span class="sd">* 檢查指定檔案是否存在</span>
 <span class="sd">* 如果該檔案存在，就顯示檔案內容</span>

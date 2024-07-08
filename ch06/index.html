@@ -428,9 +428,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#x2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      指定亂數範圍x2
+      指定亂數範圍(1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      指定亂數範圍(2)
     </span>
   </a>
   
@@ -547,9 +556,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#x2" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      指定亂數範圍x2
+      指定亂數範圍(1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      指定亂數範圍(2)
     </span>
   </a>
   
@@ -599,7 +617,11 @@
 <span class="normal">15</span>
 <span class="normal">16</span>
 <span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">datetime</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 指定日期與設定格式</span>
+
+<span class="kn">import</span> <span class="nn">datetime</span>
 <span class="n">adate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2024</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">21</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%m-</span><span class="si">%d</span><span class="s1">-%y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span> <span class="c1"># 月份2碼、日期2碼、年份2碼</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{:%m-</span><span class="si">%d</span><span class="s1">-%Y}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">adate</span><span class="p">))</span> <span class="c1"># 月份2碼、日期2碼、年份4碼</span>
@@ -660,7 +682,11 @@
 <span class="normal">39</span>
 <span class="normal">40</span>
 <span class="normal">41</span>
-<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 從 datetime 模組匯入 date 類別</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 現在日期</span>
+
+<span class="c1"># 從 datetime 模組匯入 date 類別</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
 
 <span class="c1"># 將今天日期存入 today 變數</span>
@@ -748,7 +774,11 @@
 <span class="normal">42</span>
 <span class="normal">43</span>
 <span class="normal">44</span>
-<span class="normal">45</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 從 datetime 模組匯入 datetime 類別</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 現在日期時間</span>
+
+<span class="c1"># 從 datetime 模組匯入 datetime 類別</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
 
 <span class="c1"># 將現在日期時間存入 today 變數</span>
@@ -794,23 +824,30 @@
 <span class="sd">25</span>
 <span class="sd">&quot;&quot;&quot;</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="x2">指定亂數範圍x2</h2>
-<p><strong>(1)</strong></p>
+<h2 id="1">指定亂數範圍(1)</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 指定亂數範圍(1)</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">11</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">31</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
-<p><strong>(2)</strong></p>
+<h2 id="2">指定亂數範圍(2)</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 指定亂數範圍(2)</span>
+
+<span class="kn">import</span> <span class="nn">random</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="o">*</span><span class="mi">5</span><span class="p">)</span>
@@ -828,7 +865,11 @@
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">math</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 浮點數的絕對值</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
 
 <span class="k">def</span> <span class="nf">float_to_abs</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;(1) x:&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
