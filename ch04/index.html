@@ -1037,7 +1037,7 @@
 <span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 捷運折扣計算</span>
 
 <span class="c1"># 捷運折扣計算函式</span>
-<span class="c1"># 12 歲以下小孩和 65 歲以上老師可享半價</span>
+<span class="c1"># 12 歲以下小孩和 65 歲以上老人可享半價</span>
 
 <span class="k">def</span> <span class="nf">get_discount</span><span class="p">(</span><span class="n">kid</span><span class="p">,</span> <span class="n">elder</span><span class="p">):</span>
     <span class="n">discount</span> <span class="o">=</span> <span class="mf">0.5</span>
@@ -1225,27 +1225,23 @@
 <span class="normal">21</span>
 <span class="normal">22</span>
 <span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 增加庫存★</span>
+<span class="normal">24</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 增加庫存★</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">程式必須符合以下條件：</span>
 <span class="sd">* 如果沒有為變數 increment 指定值，則 increment 等於 1</span>
 <span class="sd">* 如果變數 isplus 是 True，那麼 increment 必須加倍</span>
-<span class="sd">&quot;&quot;&quot;</span>
 
-<span class="c1"># 程式碼如下：</span>
-<span class="mi">01</span> <span class="k">def</span> <span class="nf">add_inventory</span><span class="p">(</span><span class="n">inventory</span><span class="p">,</span> <span class="n">isplus</span><span class="p">,</span> <span class="n">increment</span><span class="p">):</span>
-<span class="mi">02</span>     <span class="k">if</span> <span class="n">isplus</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
-<span class="mi">03</span>         <span class="n">increment</span> <span class="o">=</span> <span class="n">increment</span> <span class="o">*</span> <span class="mi">2</span>
-<span class="mi">04</span>     <span class="n">inventory</span> <span class="o">=</span> <span class="n">inventory</span> <span class="o">+</span> <span class="n">increment</span>
-<span class="mi">05</span>     <span class="k">return</span> <span class="n">inventory</span>
-<span class="mi">06</span> <span class="n">increment</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="mi">07</span> <span class="n">inventory</span> <span class="o">=</span> <span class="mi">24</span>
-<span class="mi">08</span> <span class="n">new_inventory</span> <span class="o">=</span> <span class="n">add_inventory</span><span class="p">(</span><span class="n">inventory</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">increment</span><span class="p">)</span>
+<span class="sd"># 程式碼如下：</span>
+<span class="sd">01 def add_inventory(inventory, isplus, increment):</span>
+<span class="sd">02     if isplus == True:</span>
+<span class="sd">03         increment = increment * 2</span>
+<span class="sd">04     inventory = inventory + increment</span>
+<span class="sd">05     return inventory</span>
+<span class="sd">06 increment = 3</span>
+<span class="sd">07 inventory = 24</span>
+<span class="sd">08 new_inventory = add_inventory(inventory, True, increment)</span>
 
-<span class="sd">&quot;&quot;&quot;</span>
 <span class="sd"># 針對下列敘述，正確的選 Yes，否則選 No</span>
 <span class="sd">A. 為了符合要求必須將 01 行更改為：</span>
 <span class="sd">    def add_inventory(inventory, isplus, increment=1):</span>
