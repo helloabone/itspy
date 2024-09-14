@@ -881,7 +881,9 @@
 <span class="normal">27</span>
 <span class="normal">28</span>
 <span class="normal">29</span>
-<span class="normal">30</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 測試某物件是否為某類別的執行個體</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 測試某物件是否為某類別的執行個體</span>
 
 <span class="kn">import</span> <span class="nn">unittest</span>
 
@@ -900,7 +902,7 @@
         <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">width</span><span class="si">}</span><span class="s1">x</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">height</span><span class="si">}</span><span class="s1">&#39;</span>
 
 <span class="k">class</span> <span class="nc">TestClass</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">test_isInstance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">testIsInstance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">point</span> <span class="o">=</span> <span class="n">Point</span><span class="p">()</span>
         <span class="n">plane</span> <span class="o">=</span> <span class="n">Plane</span><span class="p">()</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;point:&#39;</span><span class="p">,</span> <span class="n">point</span><span class="p">)</span>
@@ -908,6 +910,8 @@
         <span class="c1"># assertIsInstance(obj, cls, msg=None)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="n">point</span><span class="p">,</span> <span class="n">Point</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="n">plane</span><span class="p">,</span> <span class="n">Plane</span><span class="p">)</span>
+        <span class="c1"># self.assertIsInstance(plane, Point)</span>
+        <span class="c1"># self.assertIsInstance(point, Plane)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
@@ -933,7 +937,8 @@
 <span class="normal">18</span>
 <span class="normal">19</span>
 <span class="normal">20</span>
-<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 測試兩個物件變數是否指向同一物件</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 測試兩個物件變數是否指向同一物件</span>
 
 <span class="kn">import</span> <span class="nn">unittest</span>
 
@@ -945,12 +950,13 @@
         <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;(</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="si">}</span><span class="s1">)&#39;</span>
 
 <span class="k">class</span> <span class="nc">TestClass</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">test_isInstance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">testIs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">point1</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
         <span class="n">point2</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
         <span class="n">point3</span> <span class="o">=</span> <span class="n">point1</span>
         <span class="n">point4</span> <span class="o">=</span> <span class="n">point2</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertIs</span><span class="p">(</span><span class="n">point1</span><span class="p">,</span> <span class="n">point3</span><span class="p">)</span>
+        <span class="c1"># self.assertIs(point1, point4)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
@@ -975,7 +981,10 @@
 <span class="normal">17</span>
 <span class="normal">18</span>
 <span class="normal">19</span>
-<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 測試兩個變數的值是否相同</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 測試兩個變數的值是否相同</span>
 
 <span class="kn">import</span> <span class="nn">unittest</span>
 
@@ -986,12 +995,15 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span>
 
 <span class="k">class</span> <span class="nc">TestClass</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">test_isInstance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">testEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">point1</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
         <span class="n">point2</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+        <span class="n">point3</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
         <span class="n">pos1</span> <span class="o">=</span> <span class="n">point1</span><span class="o">.</span><span class="n">get_postion</span><span class="p">()</span>
         <span class="n">pos2</span> <span class="o">=</span> <span class="n">point2</span><span class="o">.</span><span class="n">get_postion</span><span class="p">()</span>
+        <span class="n">pos3</span> <span class="o">=</span> <span class="n">point3</span><span class="o">.</span><span class="n">get_postion</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">pos1</span><span class="p">,</span> <span class="n">pos2</span><span class="p">)</span>
+        <span class="c1"># self.assertEqual(pos1, pos3)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
@@ -1016,23 +1028,29 @@
 <span class="normal">17</span>
 <span class="normal">18</span>
 <span class="normal">19</span>
-<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 測試串列中是否有某個值</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 測試串列中是否有某個值</span>
 
 <span class="kn">import</span> <span class="nn">unittest</span>
 
 <span class="k">class</span> <span class="nc">Hundred</span><span class="p">():</span>
-    <span class="k">def</span> <span class="nf">get_odds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="k">def</span> <span class="nf">get_odds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 
-    <span class="k">def</span> <span class="nf">get_evens</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+    <span class="k">def</span> <span class="nf">get_evens</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
 
 <span class="k">class</span> <span class="nc">TestClass</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">test_isInstance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">hundred_obj</span> <span class="o">=</span> <span class="n">Hundred</span><span class="p">()</span>
-        <span class="n">odds</span> <span class="o">=</span> <span class="n">hundred_obj</span><span class="o">.</span><span class="n">get_odds</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">testIn</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">hundredObject</span> <span class="o">=</span> <span class="n">Hundred</span><span class="p">()</span>
+        <span class="n">odds</span> <span class="o">=</span> <span class="n">hundredObject</span><span class="o">.</span><span class="n">get_odds</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+        <span class="n">evens</span> <span class="o">=</span> <span class="n">hundredObject</span><span class="o">.</span><span class="n">get_evens</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertIn</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="n">odds</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">assertIn</span><span class="p">(</span><span class="mi">21</span><span class="p">,</span> <span class="n">odds</span><span class="p">)</span>
+        <span class="c1"># self.assertIn(11, evens)</span>
+        <span class="c1"># self.assertIn(101, odds)</span>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
