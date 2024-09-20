@@ -397,7 +397,7 @@
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      莓果銷售數量★
+      顏色合計★
     </span>
   </a>
   
@@ -630,7 +630,7 @@
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      莓果銷售數量★
+      顏色合計★
     </span>
   </a>
   
@@ -837,7 +837,7 @@
 <span class="n">fruit</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{1}</span><span class="s2">, </span><span class="si">{0}</span><span class="s2"> and </span><span class="si">{2}</span><span class="s2">&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
-<h2 id="_8">莓果銷售數量★</h2>
+<h2 id="_8">顏色合計★</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -856,24 +856,26 @@
 <span class="normal">16</span>
 <span class="normal">17</span>
 <span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 莓果銷售數量★</span>
+<span class="normal">19</span>
+<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 顏色合計★</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">輸出格式要求：</span>
-<span class="sd">水果名稱兩側標字串雙引號之後接一個英文冒號及空白，再接數量</span>
+<span class="sd">顏色名稱兩側標字串雙引號之後接一個英文冒號及空白，再接合計數</span>
 
-<span class="sd">例如：</span>
-<span class="sd">&quot;strawberry&quot;: 4</span>
-<span class="sd">&quot;blackberry&quot;: 7</span>
-<span class="sd">&quot;blueberry&quot;: 5</span>
-<span class="sd">&quot;raspberry&quot;: 4</span>
+<span class="sd">[輸出開始]</span>
+<span class="sd">&quot;black&quot;: 7</span>
+<span class="sd">&quot;blue&quot;: 6</span>
+<span class="sd">&quot;green&quot;: 3</span>
+<span class="sd">&quot;pink&quot;: 4</span>
+<span class="sd">[輸出結束]</span>
 <span class="sd">&quot;&quot;&quot;</span>
-<span class="n">fruit_list</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">&#39;strawberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;strawberry&#39;</span><span class="p">,</span> <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;strawberry&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;blackberry&#39;</span><span class="p">,</span> <span class="s1">&#39;blueberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;raspberry&#39;</span><span class="p">,</span>  <span class="s1">&#39;blackberry&#39;</span>
+<span class="n">color_list</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;blue&#39;</span><span class="p">,</span>  <span class="s1">&#39;pink&#39;</span><span class="p">,</span>  <span class="s1">&#39;blue&#39;</span><span class="p">,</span>  <span class="s1">&#39;black&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;pink&#39;</span><span class="p">,</span>  <span class="s1">&#39;blue&#39;</span><span class="p">,</span>  <span class="s1">&#39;green&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;pink&#39;</span><span class="p">,</span>  <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span>  <span class="s1">&#39;black&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span>  <span class="s1">&#39;pink&#39;</span><span class="p">,</span>  <span class="s1">&#39;black&#39;</span>
 <span class="p">]</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="_9">輸出檔案第一行</h2>
@@ -905,15 +907,15 @@
 
 <span class="kn">import</span> <span class="nn">os</span>
 
-<span class="k">def</span> <span class="nf">get_first_line_of_file</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fho</span><span class="p">:</span>
+<span class="k">def</span> <span class="nf">get_first_line</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fho</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">fho</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="s2">&quot;檔案不存在&quot;</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">get_first_line_of_file</span><span class="p">(</span><span class="s1">&#39;data1.txt&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">get_first_line_of_file</span><span class="p">(</span><span class="s1">&#39;data2.txt&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">get_first_line</span><span class="p">(</span><span class="s1">&#39;data1.txt&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">get_first_line</span><span class="p">(</span><span class="s1">&#39;data2.txt&#39;</span><span class="p">))</span>
 </code></pre></div></td></tr></table></div>
 <h2 id="_10">檔案處理錯誤</h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -992,13 +994,13 @@
 
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">[測資開始]</span>
-<span class="sd">&#39;A01&#39;, 180, 1</span>
-<span class="sd">&#39;B02&#39;, 240, 5</span>
+<span class="sd">&#39;A&#39;, 180, 1</span>
+<span class="sd">&#39;B&#39;, 240, 5</span>
 
-<span class="sd">&#39;C01&#39;, 195, 3</span>
-<span class="sd">&#39;D02&#39;, 215, 4</span>
+<span class="sd">&#39;C&#39;, 195, 3</span>
+<span class="sd">&#39;D&#39;, 215, 4</span>
 
-<span class="sd">&#39;E01&#39;, 360, 2</span>
+<span class="sd">&#39;E&#39;, 360, 2</span>
 
 <span class="sd">[測資結束]</span>
 
@@ -1054,13 +1056,13 @@
 
 <span class="kn">import</span> <span class="nn">os</span>
 
-<span class="n">fname</span> <span class="o">=</span> <span class="s1">&#39;data.txt&#39;</span>
-<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">fname</span><span class="p">):</span>
-    <span class="n">fho</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;data.txt&#39;</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="n">fho</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">fho</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
     <span class="n">fho</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="c1"># r, r+, a, a+, w, w+, x, x+ 的差異</span>
-<span class="n">fho</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
+
+<span class="n">fho</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
 <span class="n">fho</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;End of File&quot;</span><span class="p">)</span>
 <span class="n">fho</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div></td></tr></table></div>
